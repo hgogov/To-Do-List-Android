@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">To-Do List</string>
+    <string name="action_settings">Settings</string>
+    <string name="Done">Remove</string>
+    <string name="add_task">Save Task</string>
+    <string name="hint_task">Task</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="set_time">Time not set</string>
+    <string name="set_date">Date not set</string>
+    <string name="update_task">Edit Task</string>
+    <string name="switch_notify">Notify </string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This vertical linear layout contains all the views in the AddTaskActivity code.
+    This includes an EditText to adtaskEntrytask description, and buttons to select a priority
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+    <!-- EditText for description input -->
+    <EditText
+        android:id="@+id/task_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="@string/hint_task"
+        android:paddingBottom="20dp"
+        android:importantForAutofill="no"
+        android:inputType="" tools:targetApi="o"/>
+
+
+    <Switch
+        android:id="@+id/switchNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingTop="20dp"
+        android:text="@string/switch_notify"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSetTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/btnAddPickTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pick_time" />
+
+        <Button
+            android:id="@+id/btnAddPickDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pick_date" />
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/pickTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/set_time"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/pickDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/set_date"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+    <!-- Add Task button -->
+    <Button
+        android:id="@+id/btnAddTask"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_task"
+        android:textColor="@android:color/primary_text_dark"
+        />
+
+</LinearLayout>
